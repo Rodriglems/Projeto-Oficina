@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+    flex-direction: row;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ff4500;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Move os links para o topo */
+.sidebar nav {
+  flex-grow: 1;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 18px;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #e03d00;
+}
+
+/* Botão de sair sempre no fim */
+.logout-button {
+  margin-top: 493px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+ 
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+ 
+
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha no topo */
+}
+
+.form-agendamento {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px; /* Limita o tamanho do formulário */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 60px;
+}
+
+/* Título */
+.content h1 {
+  position: absolute;
+  color: #ff4500;
+  margin: auto;
+}
+
+.form-agendamento input,
+.form-agendamento textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+
+}
+
+.form-group.data-hora {
+  display: flex;
+  gap: 20px;
+}
+
+.input-data,
+.input-hora {
+  flex: 1;
+}
+
+.form-agendamento button {
+  width: 100%;
+  background-color: #ff4500;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-agendamento button:hover {
+  background-color: #e03d00;
+}
+
+img {
+  max-width: 180px;
+  height: auto;
+}

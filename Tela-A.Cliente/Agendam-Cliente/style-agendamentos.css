@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ff4500;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo {
+  max-width: 160px;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #e03d00;
+}
+
+.logout-button {
+  margin-top: 515px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.content h1 {
+  color: #ff4500;
+  margin-bottom: 30px;
+}
+
+.agendamento-card {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.agendamento-card:hover {
+  transform: translateY(-3px);
+}
+
+.agendamento-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cancelar {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.remarcar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancelar:hover {
+  background-color: #c82333;
+}
+
+.remarcar:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}

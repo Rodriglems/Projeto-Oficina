@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamentos | MotoService</title>
+  <link rel="stylesheet" href="style-agendamentos.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="Logotipo para moto peças simples preto e amarelo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/Tela-A.Cliente/Dashbord/Dasbord-Cliente.html#">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/Tela-A.Cliente/Historico-Cliente/Historico.html">Meus Históricos</a></li>
+          <li><a class="active"  href="http://127.0.0.1:5500/Tela-A.Cliente/Agendam-Cliente/Agendam.html#">Agendamento</a></li>
+          <li><a class="logout-button" href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Agendamentos Atuais</h1>
+      
+      <div class="agendamento-card">
+        <p><strong>Modelo:</strong> CG 160 Titan</p>
+        <p><strong>Data:</strong> 28/05/2025</p>
+        <p><strong>Hora:</strong> 09:00</p>
+        <p><strong>Status:</strong> Confirmado</p>
+        <div class="botoes">
+          <button class="cancelar">Cancelar</button>
+          <button class="remarcar">Remarcar</button>
+        </div>
+      </div>
+
+      <div class="agendamento-card">
+        <p><strong>Modelo:</strong> Yamaha Fazer 250</p>
+        <p><strong>Data:</strong> 01/06/2025</p>
+        <p><strong>Hora:</strong> 14:30</p>
+        <p><strong>Status:</strong> Pendente</p>
+        <div class="botoes">
+          <button class="cancelar">Cancelar</button>
+          <button class="remarcar">Remarcar</button>
+        </div>
+      </div>
+
+      <!-- Adicione outros agendamentos aqui dinamicamente -->
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #ff4500;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.logo {
+  max-width: 160px;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #e03d00;
+}
+
+.logout-button {
+  margin-top: 515px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.content h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid #ff4500;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.btn-agendar {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-agendar:hover {
+  background-color: #e03d00;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar nav ul li {
+    margin: 5px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

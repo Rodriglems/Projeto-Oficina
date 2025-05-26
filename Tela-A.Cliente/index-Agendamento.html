@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MotoService | Área do Cliente</title>
+  <link rel="stylesheet" href="style-Agendamento.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2><img src="Logotipo para moto peças simples preto e amarelo.png" alt=""></h2>
+      <nav>
+        <ul>
+          <li><a class="active" href="http://127.0.0.1:5500/Tela-A.Cliente/Dashbord/Dasbord-Cliente.html#">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/Tela-A.Cliente/Historico-Cliente/Historico.html">Meus Históricos</a></li>
+          <li><a href="http://127.0.0.1:5500/Tela-A.Cliente/Agendam-Cliente/Agendam.html#">Agendamento</a></li>
+          <li><a class="logout-button" href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Agende seu Serviço</h1>
+      <form class="form-agendamento">
+        <label for="modelo">Modelo da Moto</label>
+        <input type="text" id="modelo" name="modelo" placeholder="Ex: CG 160 Titan" required />
+
+        <label for="ano">Ano</label>
+        <input type="number" id="ano" name="ano" placeholder="Ex: 2022" required />
+
+        <div class="form-group data-hora">
+          <div class="input-data">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required />
+          </div>
+          <div class="input-hora">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required />
+          </div>
+        </div>
+
+        <label for="descricao">Descrição do Serviço</label>
+        <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o problema..." required></textarea>
+
+        <button type="submit">Confirmar Agendamento</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
